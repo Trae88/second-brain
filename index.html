@@ -17,12 +17,19 @@ h2{font-family:'Playfair Display',serif;font-size:21px;margin:36px 0 10px;
 padding-bottom:7px;border-bottom:2px solid var(--gold)}
 .lede{font-size:15px;color:#3c4a63;margin:0 0 16px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
-.card{background:#fff;border:1px solid #e6e0d4;border-radius:4px;padding:15px}
+.card{background:#fff;border:1px solid #e6e0d4;border-radius:4px;padding:15px;
+display:flex;flex-direction:column}
 .card .k{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.09em;
 text-transform:uppercase;color:var(--teal)}
 .card .v{font-family:'Playfair Display',serif;font-size:27px;font-weight:700;
 margin:4px 0 2px}
 .card .s{font-size:12px;color:#6b7891}
+.d{margin-top:9px;padding-top:8px;border-top:1px dashed #e6e0d4;
+font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:.03em}
+.d.up{color:#2f7d4f}
+.d.down{color:#a8442f}
+.d.flat{color:#6b7891}
+.d.none{color:#98999b;font-style:italic}
 table{width:100%;border-collapse:collapse;background:#fff;
 border:1px solid #e6e0d4;border-radius:4px;overflow:hidden;font-size:14px}
 th{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.08em;
@@ -32,7 +39,6 @@ td{padding:10px 12px;border-top:1px solid #efeae0}
 td.num{text-align:right;font-variant-numeric:tabular-nums}
 .note{background:#fff;border-left:3px solid var(--gold);padding:13px 16px;
 font-size:14px;margin:16px 0;border-radius:0 4px 4px 0}
-.tiny{font-size:12px;color:#6b7891}
 footer{border-top:1px solid #e0dace;margin-top:40px;padding-top:16px;
 font-size:12px;color:#6b7891}
 </style></head><body>
@@ -44,14 +50,16 @@ font-size:12px;color:#6b7891}
 
 <h2>Scope</h2>
 <div class="lede">An aggregated view of a personal knowledge pipeline. Session
-content, quotes, project names, and finding details are withheld by design.</div>
+content, quotes, project names, and finding details are withheld by design.
+Each figure below is compared against the previous run.</div>
 <div class="grid">
-<div class="card"><div class="k">Sessions</div><div class="v">43</div><div class="s">aggregated</div></div><div class="card"><div class="k">Messages</div><div class="v">9,973</div><div class="s">all categories</div></div><div class="card"><div class="k">Concepts</div><div class="v">93</div><div class="s">distinct terms</div></div><div class="card"><div class="k">Connections</div><div class="v">3,367</div><div class="s">concept co-occurrence</div></div>
+<div class="card"><div class="k">Sessions</div><div class="v">43</div><div class="s">aggregated</div><div class="d flat">no change vs previous run</div></div><div class="card"><div class="k">Messages</div><div class="v">9,973</div><div class="s">all categories</div><div class="d flat">no change vs previous run</div></div><div class="card"><div class="k">Concepts</div><div class="v">93</div><div class="s">distinct terms</div><div class="d flat">no change vs previous run</div></div><div class="card"><div class="k">Connections</div><div class="v">3,367</div><div class="s">concept co-occurrence</div><div class="d flat">no change vs previous run</div></div><div class="card"><div class="k">Findings</div><div class="v">17</div><div class="s">flagged for review</div><div class="d flat">no change vs previous run</div></div>
 </div>
+<div class="note">Compared against the previous snapshot.</div>
 
 <h2>Message composition</h2>
-<div class="lede">Four kinds of text enter the store. Only one is authored by
-the user; reasoning findings are computed from that subset alone.</div>
+<div class="lede">Every entry is classified from its own recorded category
+field, not inferred. Percentages are of all messages.</div>
 <table><thead><tr><th>Category</th><th>Count</th><th>Share</th></tr></thead>
 <tbody>
 <tr><td>Assistant replies</td><td class='num'>4976</td><td class='num'>49.9%</td></tr><tr><td>Tool results</td><td class='num'>4507</td><td class='num'>45.2%</td></tr><tr><td>User-authored messages</td><td class='num'>489</td><td class='num'>4.9%</td></tr><tr><td>Context offloads</td><td class='num'>1</td><td class='num'>0.0%</td></tr>
