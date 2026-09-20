@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Second Brain &middot; Public Summary</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B2A4A;--gold:#C89B3C;--teal:#4E8B8B;--cream:#FBF8F2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--navy);
+font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.55}
+header{background:var(--navy);color:var(--cream);padding:36px 22px 30px}
+h1{font-family:'Playfair Display',serif;font-size:30px;margin:0 0 8px;font-weight:700}
+.sub{font-family:'Oswald',sans-serif;font-weight:300;font-size:13px;
+letter-spacing:.09em;text-transform:uppercase;opacity:.82}
+main{max-width:760px;margin:0 auto;padding:26px 20px 70px}
+h2{font-family:'Playfair Display',serif;font-size:21px;margin:36px 0 10px;
+padding-bottom:7px;border-bottom:2px solid var(--gold)}
+.lede{font-size:15px;color:#3c4a63;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.card{background:#fff;border:1px solid #e6e0d4;border-radius:4px;padding:15px}
+.card .k{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.09em;
+text-transform:uppercase;color:var(--teal)}
+.card .v{font-family:'Playfair Display',serif;font-size:27px;font-weight:700;
+margin:4px 0 2px}
+.card .s{font-size:12px;color:#6b7891}
+table{width:100%;border-collapse:collapse;background:#fff;
+border:1px solid #e6e0d4;border-radius:4px;overflow:hidden;font-size:14px}
+th{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.08em;
+text-transform:uppercase;text-align:left;padding:10px 12px;
+background:var(--navy);color:var(--cream)}
+td{padding:10px 12px;border-top:1px solid #efeae0}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.note{background:#fff;border-left:3px solid var(--gold);padding:13px 16px;
+font-size:14px;margin:16px 0;border-radius:0 4px 4px 0}
+.tiny{font-size:12px;color:#6b7891}
+footer{border-top:1px solid #e0dace;margin-top:40px;padding-top:16px;
+font-size:12px;color:#6b7891}
+</style></head><body>
+<header>
+  <h1>Second Brain</h1>
+  <div class="sub">Public summary &middot; structure and totals only</div>
+</header>
+<main>
+
+<h2>Scope</h2>
+<div class="lede">An aggregated view of a personal knowledge pipeline. Session
+content, quotes, project names, and finding details are withheld by design.</div>
+<div class="grid">
+<div class="card"><div class="k">Sessions</div><div class="v">43</div><div class="s">aggregated</div></div><div class="card"><div class="k">Messages</div><div class="v">1</div><div class="s">all categories</div></div><div class="card"><div class="k">Concepts</div><div class="v">93</div><div class="s">distinct terms</div></div><div class="card"><div class="k">Connections</div><div class="v">3,367</div><div class="s">concept co-occurrence</div></div>
+</div>
+
+<h2>Message composition</h2>
+<div class="lede">Four kinds of text enter the store. Only one is authored by
+the user; reasoning findings are computed from that subset alone.</div>
+<table><thead><tr><th>Category</th><th>Count</th><th>Share</th></tr></thead>
+<tbody>
+
+</tbody></table>
+<div class="note">Findings derive from the user-authored subset only. Counting
+the full store would measure machine output rather than human reasoning.</div>
+
+<h2>Domain split</h2>
+<div class="lede">Concepts are classified by explicit keyword, not inference.
+Terms matching neither list are reported as unclassified rather than guessed.</div>
+<table><thead><tr><th>Domain</th><th>Concepts</th><th>Share</th></tr></thead>
+<tbody>
+<tr><td>Mission domain</td><td class='num'>57</td><td class='num'>61.3%</td></tr><tr><td>Infrastructure domain</td><td class='num'>31</td><td class='num'>33.3%</td></tr><tr><td>Mixed domain</td><td class='num'>5</td><td class='num'>5.4%</td></tr>
+</tbody></table>
+
+<h2>Findings</h2>
+<div class="lede">Types and counts only. Individual findings carry quotations and
+are excluded from this build.</div>
+<table><thead><tr><th>Type</th><th>Count</th></tr></thead>
+<tbody>
+<tr><td>Stated constraints</td><td class='num'>14</td></tr><tr><td>Open threads</td><td class='num'>2</td></tr><tr><td>Unsupported leaps</td><td class='num'>1</td></tr>
+</tbody></table>
+
+<footer>
+Generated 2026-09-20 &middot; sanitised build &middot; no session text included
+</footer>
+</main></body></html>
